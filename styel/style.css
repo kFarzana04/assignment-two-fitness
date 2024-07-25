@@ -28,12 +28,27 @@ body{
 .text-paragraph{
     font-size: 16px;
     font-weight: 400px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.heading-secondary{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    color: #FFFFFF;
+}
+h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
     text-align: center;
 }
-h2{
-    font-size: 42px;
-    font-weight: 800;
-     
+.text-content{
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0px 30px 0 30px;
+    color: #ffffff80;
 }
 
 
@@ -95,23 +110,13 @@ ul{
     justify-content: center;
     align-items: center;
 }
-.heading-secondary{
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 14px;
-    color: #FFFFFF;
-}
+
 .habit-text{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 80px;
 }
-h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: #FFFFFF;
-    text-align: center;
-}
+
 .habit-main-content{
     margin-left: 0px;
 }
@@ -124,10 +129,150 @@ h3{
 .round{
     border-radius: 50%;
 }
-.text-content{
-    font-size: 14px;
-    font-weight: 400px;
-    text-align: center;
-    padding: 0px 30px 0 30px;
+
+/* Run Section Starts Here */
+
+.run-container{
+    max-width: 80%;
+    height: 371px;
+    margin: 0 auto;
+    background-color: #222222;
+    justify-content: column;
+    gap: 165px;
+    border-radius: 18px;
+}
+.run-text-content{
+    width: 443px;
+    height: 290px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 54px;
+
 }
 
+.btn-three{
+    padding: 12px 50px;
+    background-color: #E6533C;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    margin-top: 34px;
+}
+.run-man img{
+    width: 366px;
+    height: 300px;
+    border-radius: 18px;
+    margin-top: 32px;
+
+}
+/* chart and calculation section styles*/
+
+.chart-container{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.chart-text-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bmi-container{
+    height: 487px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.bmi-chart, .bmi-form{
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bmi-chart{
+    margin-top: 52px;
+    margin-left: 50px;
+}
+h4{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.bmi-chart table{
+    width: 310px;
+    height: 216px;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 52px;
+
+
+}
+.bmi-chart tr, .bmi-chart th, .bmi-chart td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bmi-chart th, .bmi-chart td{
+    font-size: 14px;
+    color: #ffffff80;
+    font-weight: 400;
+    padding: 13px 18px;
+}
+.bmi-form p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff80;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.bmi-form input{
+    width: 200px;
+    height: 30px;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#sex{
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#activity-factor{
+    width: 425px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+option{
+    color: #141414;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive part */
+@media screen and (max-width: 576px) {
+    .habit-section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
