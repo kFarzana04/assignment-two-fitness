@@ -29,6 +29,7 @@ body{
     font-size: 16px;
     font-weight: 400px;
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
 }
 
 .heading-secondary{
@@ -102,13 +103,66 @@ ul{
     margin-left: 14px;
 
 }
+.header-img-content{
+    flex-direction: column;
+}
+.header-img{
+    display: block;
+}
+.btn-card-1{
+    width: 193px;
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    background-color: #393939;
+    backdrop-filter: 20px;
+    text-align: left;
+    padding: 10px 35px 20px 20px;
+    border-radius: 12px;
+    top: 20px;
+    right: 20px;
+}
+.card-heading{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+.card-text{
+    font-size: 13px;
+    font-size: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
+.btn-card-2{
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    background-color: #393939;
+    backdrop-filter: 20px;
+    text-align: left;
+    border-radius: 12px;
+    width: 173px;
+    padding: 10px 35px 20px 20px;
+}
+.card{
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding-right: 22px;
+}
+.card-text-left{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
 /* Habit Section Styles */
 .habit-section{
     width: 80%;
     margin: 0 auto;
+}
+.habit-container{
+    width: 1060px;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 114px;
 }
 
 .habit-text{
@@ -132,12 +186,18 @@ ul{
 
 /* Run Section Starts Here */
 
-.run-container{
+.run-section{
     max-width: 80%;
     height: 371px;
     margin: 0 auto;
+}
+
+.run-container{
+    width: 1060px;
+    margin: 0 auto;
+    padding-bottom: 30px;
     background-color: #222222;
-    justify-content: column;
+    justify-content: space-between;
     gap: 165px;
     border-radius: 18px;
 }
@@ -151,7 +211,7 @@ ul{
 }
 
 .btn-three{
-    padding: 12px 50px;
+    padding: 12px 63px;
     background-color: #E6533C;
     color: white;
     font-size: 18px;
@@ -160,19 +220,25 @@ ul{
     border-radius: 40px;
     margin-top: 34px;
 }
+
 .run-man img{
-    width: 366px;
+    width: 400px;
     height: 300px;
     border-radius: 18px;
     margin-top: 32px;
+    margin-right: 40px;
 
 }
 /* chart and calculation section styles*/
 
-.chart-container{
+.chart-section{
     max-width: 80%;
     margin: 0 auto;
     margin-top: 80px;
+}
+.chart-container{
+    width: 1060px;
+    margin: 0 auto;
 }
 .chart-text-content{
     justify-content: center;
@@ -181,6 +247,7 @@ ul{
 }
 .bmi-container{
     height: 487px;
+    margin-top: 70px;
     flex-direction: row;
     justify-content: space-between;
     background-color: #222222;
@@ -218,36 +285,42 @@ h4{
     font-weight: 400;
     padding: 13px 18px;
 }
-.bmi-form p{
+.text{
     font-size: 14px;
     font-weight: 400;
     color: #ffffff80;
     margin-top: 14px;
     margin-bottom: 34px;
 }
+.bmi-form{
+    margin-top: 40px;
+}
 .bmi-form input{
-    width: 200px;
+    width: 201px;
     height: 30px;
     gap: 10px;
+    padding-left: 10px;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     margin-right: 5px;
     border: none;
     border-radius: 8px;
-    padding: 5px 5px;
+    padding: 8px 10px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 #sex{
-    width: 210px;
-    height: 40px;
+    width: 224px;
+    height: 45px;
+    padding: 8px 10px;
     border: none;
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
 }
 #activity-factor{
-    width: 425px;
-    height: 40px;
+    width: 453px;
+    height: 42px;
+    padding-left: 10px;
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -255,6 +328,40 @@ h4{
 }
 option{
     color: #141414;
+    padding-left: 8px;
+}
+
+/* Team Section Style */
+
+.team-section{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+.team-content{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 58px;
+    margin-top: 58px;
+}
+.team{
+    width: 1060px;
+    height: 604px;
+    margin: 0 auto;
+    padding: 25px 0 0 27px;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team img{
+    width: 327px;
+    height: 272px;
+    gap: 20px;
+    border-radius: 20px;
+    
+
 }
 
 
@@ -268,11 +375,3 @@ option{
 
 
 /* Responsive part */
-@media screen and (max-width: 576px) {
-    .habit-section{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-}

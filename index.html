@@ -20,18 +20,29 @@
         </div>
         <div class="header-main display-flex">
             <div class="header-text-content">
-                <h1 class="heading-secondary">Get Body in shape & stay healthy</h1>
+                <h1 class="heading-secondary">Get Body in <br> shape & stay <br> healthy</h1>
             <p class="text-paragraph">In a FitLife we believe that fitness is not just a goal, but a way of life. <br> Weather you are a beginner taking your first steps towards a <br> healthier life style, Than Welcome to Fitness.</p>
             <button class="btn-primary">Join Club Now</button>
             <button class="btn-secondary">Download App</button>
             </div>
-            <div class="header-img-content">
-                <img src="images/Images 2.png" alt="">
+            <div class="header-img-content display-flex">
+              <img class="header-img" src="images/Images 2.png" alt="">
+                <div class="overlay">
+                    <button class="btn-card-2">
+                        <span class="card">300+</span><br>
+                        <span class="card-text-left">Video Tutorial</span>
+                    </button>
+                    <button class="btn-card-1">
+                        <span class="card-heading">500</span><br>
+                        <span class="card-text">Free Workout Videos</span>
+                    </button>
+                </div>
             </div>
         </div>
        </section>
     </header>
-    <section class="habit-section display-flex">
+    <section class="habit-section">
+       <div class="habit-container display-flex">
         <div class="habit-text">
             <h2 class="heading-secondary">Change your Habit</h2>
             <p class="text-content">Transform your body, mind, and spirit with FitLife. Sign up now and take <br> the first step towards a healthier, happier you.Firstly change <br> your habit. Let's achieve  greatness together!</p>
@@ -59,85 +70,108 @@
                 <p class="text-content">Practicing fitness regularly is key to achieving long-term health and wellness.</p>
             </div>
         </div>
+       </div>
     </section>
-    <section class="run-container display-flex">
-        <div class="run-text-content">
-            <h2 class="heading-secondary">Run an Extra <br> Mile Easily</h2>
-            <p class="text-paragraph">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-            <button class="btn-three">join Now</button>
-        </div>
-        <div class="run-man">
-            <img src="images/run.jpg" alt="Running Man">
+    <section class="run-section">
+        <div class="run-container display-flex">
+            <div class="run-text-content">
+                <h2 class="heading-secondary">Run an Extra <br> Mile Easily</h2>
+                <p class="text-paragraph">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <button class="btn-three">join Now</button>
+            </div>
+            <div class="run-man">
+                <img src="images/run.jpg" alt="Running Man">
+            </div>
         </div>
     </section>
     <section class="training-section">
 
     </section>
-    <section class="chart-container">
-        <div class="chart-text-content">
-            <h2 class="heading-secondary">BMI Calculator</h2>
-            <p class="text-paragraph">Transform your body, mind, and spirit with FitLife. Sign up now and take <br> the first step towards a healthier, happier you.Firstly change <br> your habit. Let's achieve  greatness together!</p>
-        </div>
-        <div class="bmi-container display-flex">
-            <div class="bmi-chart">
-                <h4>BMI Calculator Chart</h4>
-                <table>
-                    <tr>
-                        <th>BMI</th>
-                        <th>Weight Status</th>
-                    </tr>
-                    <tr>
-                        <td>Below 18.5</td>
-                        <td>Underweight</td>
-                    </tr>
-                    <tr>
-                        <td>18.5 - 24.9</td>
-                        <td>Healthy</td>
-                    </tr>
-                    <tr>
-                        <td>25.0 - 29.9</td>
-                        <td>Overweight</td>
-                    </tr>
-                    <tr>
-                        <td>30.0 - and Above</td>
-                        <td>Obese</td>
-                    </tr>
-                </table>
-
+    <section class="chart-section">
+        <div class="chart-container">
+            <div class="chart-text-content">
+                <h2 class="heading-secondary">BMI Calculator</h2>
+                <p class="text-paragraph">Transform your body, mind, and spirit with FitLife. Sign up now and take <br> the first step towards a healthier, happier you.Firstly change <br> your habit. Let's achieve  greatness together!</p>
             </div>
-            <div class="bmi-form">
-                <h4>Calculate your BMI</h4>
-                <p>
-                    Transform your body, mind, and spirit with FitLife. Sign up now <br> and take the first step towards a healthier, happier <br> you.Firstly change your habit. 
-                </p>
-                <form action="" >
-                    <input type="text" id="height" placeholder="Height/Cm">
-                    <input type="text" id="weight" placeholder="Weight/ Kg">
-                    <input type="text" id="age" placeholder="Age">
-                    <select id="sex">
-                        <option value="">
-                            Sex
-                        </option>
-                        <option value="male">
-                            Male
-                        </option>
-                        <option value="female">
-                            Female
-                        </option>
-                    </select>
-                    <select id="activity-factor">
-                        <option value="">Select an activity factor</option>
-                        <option value="One">One</option>
-                        <option value="two">Two</option>
-                        <option value="">
-                            Three
-                        </option>
-                        <option value="four">Four</option>
-                    </select>
-                    <button class="btn-three" type="button">
-                        Calculate
-                    </button>
-                </form>
+            <div class="bmi-container display-flex">
+                <div class="bmi-chart">
+                    <h4>BMI Calculator Chart</h4>
+                    <table>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+    
+                </div>
+                <div class="bmi-form">
+                    <h4>Calculate your BMI</h4>
+                    <p class="text">
+                        Transform your body, mind, and spirit with FitLife. Sign up now <br> and take the first step towards a healthier, happier <br> you.Firstly change your habit. 
+                    </p>
+                    <form action="" >
+                        <input type="text" id="height" placeholder="Height/Cm">
+                        <input type="text" id="weight" placeholder="Weight/ Kg">
+                        <input type="text" id="age" placeholder="Age">
+                        <select id="sex">
+                            <option value="">
+                                Sex
+                            </option>
+                            <option value="male">
+                                Male
+                            </option>
+                            <option value="female">
+                                Female
+                            </option>
+                        </select>
+                        <select id="activity-factor">
+                            <option value="">Select an activity factor</option>
+                            <option value="One">One</option>
+                            <option value="two">Two</option>
+                            <option value="">
+                                Three
+                            </option>
+                            <option value="four">Four</option>
+                        </select>
+                        <button class="btn-three" type="button">
+                            Calculate
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-section">
+        <div class="team-content">
+             <h2 class="heading-secondary">Meet Our Team</h2>
+             <p class="text">
+                Transform your body, mind, and spirit with FitLife. Sign up now and take the <br> first step towards healthier, happier you.Firstly change your habit.
+            </p>
+        </div>
+        <div class="team-container">
+            <div class="team">
+                <img src="images/trainer1.png" alt="">
+                <img src="images/trainer2.png" alt="">
+                <img src="images/trainer3.png" alt="">
+                <img src="images/trainer4.png" alt="">
+                <img src="images/trainer5.png" alt="">
+                <img src="images/trainer6.png" alt="">
             </div>
         </div>
     </section>
