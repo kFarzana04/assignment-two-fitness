@@ -59,7 +59,7 @@ h3{
     max-width: 80%;
     margin: 0 auto;
 }
-ul{
+.navbar ul{
     max-width: 465px;
     height: 46px;
     border: 1px solid #1A2130;
@@ -299,8 +299,8 @@ h4{
     width: 201px;
     height: 30px;
     gap: 10px;
+    color: white;
     padding-left: 10px;
-    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 8px;
     margin-right: 5px;
     border: none;
@@ -314,21 +314,24 @@ h4{
     padding: 8px 10px;
     border: none;
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff80;
     background-color: rgba(255, 255, 255, 0.1);
 }
 #activity-factor{
-    width: 453px;
+    width: 454px;
     height: 42px;
     padding-left: 10px;
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff80;
+
+   
 }
 option{
     color: #141414;
     padding-left: 8px;
+    
 }
 
 /* Team Section Style */
@@ -360,8 +363,59 @@ option{
     height: 272px;
     gap: 20px;
     border-radius: 20px;
-    
+}
 
+/* Footer Section Started */
+.footer-section{
+    max-width: 80%;
+    height: 490px;
+    margin: 0 auto;
+    margin-top: 88px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer-heading{
+    font-size: 70px;
+    font-weight: 800;
+    color: #E6533C;
+    margin-bottom: 0px;
+    margin-top: 66px;
+}
+.footer-text{
+    color: #ffffff80;
+}
+.last{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 66px;
+    margin-bottom: 0px;
+}
+.footer-list ul{
+    padding-left: 0px;
+}
+.footer-list, ul li{
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    list-style: none;
+    margin-left: 0px;
+    color: #ffffff80;
+    cursor: pointer;
+}
+hr{
+    width: 1050px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 36px;
+}
+.last-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
