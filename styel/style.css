@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 body{
     font-family: "Inter", sans-serif;
     background-color: #141414;
@@ -82,6 +83,11 @@ h3{
     justify-content: space-between;
  
 }
+span #highlight{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 78px;
+}
 .header-text-content h1{
     font-size: 78px;
     font-weight: 900;
@@ -108,17 +114,19 @@ h3{
 }
 .header-img{
     display: block;
+    position: absolute;
 }
 .btn-card-1{
+    position: relative;
     width: 193px;
     border: 1px solid  rgba(255, 255, 255, 0.1);
-    background-color: #393939;
+    background-color: rgba(48, 48, 48, 0.54);
     backdrop-filter: 20px;
     text-align: left;
     padding: 10px 35px 20px 20px;
     border-radius: 12px;
-    top: 20px;
-    right: 20px;
+    right: -81px;
+    bottom: -187px;
 }
 .card-heading{
     color: #FFFFFF;
@@ -132,13 +140,17 @@ h3{
     color: rgba(255, 255, 255, 0.65);
 }
 .btn-card-2{
+    position: relative;
     border: 1px solid  rgba(255, 255, 255, 0.1);
     background-color: #393939;
-    backdrop-filter: 20px;
+    backdrop-filter: 25px;
     text-align: left;
     border-radius: 12px;
     width: 173px;
     padding: 10px 35px 20px 20px;
+    top: 415px;
+    right: 106px;
+
 }
 .card{
     font-size: 40px;
@@ -229,6 +241,58 @@ h3{
     margin-right: 40px;
 
 }
+/* Training and Exercise Section Style */
+
+.training-section{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.training-container{
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 1060px;
+    height: 464px;
+    margin: 0 auto;
+}
+.image-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+
+}
+.image-item img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* chart and calculation section styles*/
 
 .chart-section{
@@ -343,10 +407,11 @@ option{
 }
 .team-content{
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 58px;
     margin-top: 58px;
+    border-radius: 18px;
 }
 .team{
     width: 1060px;
@@ -358,11 +423,23 @@ option{
     grid-template-columns: repeat(3, 1fr);
 }
 
-.team img{
+.team-member img{
+    position: relative;
     width: 327px;
     height: 272px;
-    gap: 20px;
     border-radius: 20px;
+}
+h6{
+    position: absolute;
+    margin: -71px 20px;
+    padding: 0px;
+    font-size: 1.2em;
+}
+.Trainer {
+    position: absolute;
+    margin: 0px 20px 0px 20px;;
+    font-size: 13px;
+    color: #ffffff80;
 }
 
 /* Footer Section Started */
