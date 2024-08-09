@@ -89,7 +89,7 @@ h3{
     background: #E6533C;
     border-radius: 39px;
     padding: 10px 20px;
-    transition: .30s;
+    transition: 1s;
 }
 .nav-items:first-child:hover{
     padding: 0px;
@@ -261,43 +261,41 @@ h3{
 }
 .training-container{
     width: 1060px;
-    height: 550px;
     margin: 0 auto;
-    margin-top: 100px;
+    
 }
 .text{
     margin-bottom: 58px;
 }
-.images-row img{
-    width: 353px;
-    height: 400px;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+.grid-container{
+    margin: 0 auto;
+    width: 1060px;
+    
 }
 
-.single{
-    flex: 1;
-    width: 300px;
-    margin-left: 0;
-    box-shadow: rgba(0, 0, 0, 0.3);
-    
+.images-grid{
+    margin-bottom: 50px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 400px) 275px 375px;
 }
-.box-one{
-    background: rgba(255, 0, 0, 0.3);
-    
+.images-item{
+    border-radius: 5px;
+    border: 2px #222222 solid; 
+    padding: 10px;
 }
-.box-two{
-    background-image: url('../images/exercise2.png');
-}
-.square-collage img{
-    width: 160px;
-    height: 200px;
+.images-item img{
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
-.square-collage{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.images-grid:hover img{
+    cursor: pointer;
+    background-color: rgba(0, 71, 255, 0.3);
 }
+
+
+
 
 
 
