@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: "Inter", sans-serif;
     background-color: #141414;
@@ -36,7 +41,7 @@ body{
 .heading-secondary{
     width: 520px;
     height: 282px;
-    font-size: 85px;
+    font-size: 75px;
     font-weight: 900;
     margin-bottom: 25px;
     color: #FFFFFF;
@@ -80,6 +85,7 @@ h3{
 .navbar{
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 .nav-items{
     list-style: none;
@@ -524,18 +530,22 @@ hr{
 /* Responsive part */
 
 @media screen and (max-width: 575px){
+    body{
+        max-width: 100%vh;
+        height: 100%vh;
+    }
     .header-section{
         max-width: 80%;
         margin: 0 auto;
     }
     .nav-links, .nav-items{
         display: none;
+
     }
 
     .header-main{
         flex-direction: column;
         align-items: center;
-        margin-left: 20px;
     }
     .btn-card-1 {
         bottom: -104px;
@@ -546,7 +556,7 @@ hr{
         top: 294px;
     }
     .header-main .heading-secondary{
-        font-size: 78px;
+        font-size: 75px;
         margin-bottom: 30px;
     }
     
@@ -617,9 +627,10 @@ hr{
     .run-text-content{
         width: 100%;
         align-items: center;
+        margin-left: 34px;
     }
     .rum-man{
-        margin-left: 40px;
+        margin-left: 20px;
     }
     
     .run-man img{
@@ -638,10 +649,12 @@ hr{
         max-width: 80%;
         margin: 0 auto;
     }
-    .training-text-content, .text{
-        text-align: center;
-        margin: 50px 10px;
+    .training-text-content .text{
+        text-align: left;
+        margin: 50px 0px;
     }
+
+
     .images-grid{
         margin: 0 auto;
         align-items: center;
@@ -656,6 +669,9 @@ hr{
     }
     .chart-container{
         margin: 0 auto;
+    }
+    .chart-text-content{
+        text-align: left;
     }
 
     .text-paragraph{
@@ -709,8 +725,14 @@ hr{
         height: auto;
         align-items: center;
     }
+    .team-content{
+        text-align: left;
+    }
     .team img{
         padding: 10px;
+    }
+    .text{
+        margin-left: 0;
     }
 
 
