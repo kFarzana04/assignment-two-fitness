@@ -5,10 +5,11 @@
     padding: 0;
 }
 
-body{
+body, html{
     font-family: "Inter", sans-serif;
     background-color: #141414;
     color: white;
+    overflow-x: hidden;
 }
 /* Shared Styles */
 .display-flex{
@@ -41,7 +42,7 @@ body{
 .heading-secondary{
     width: 520px;
     height: 282px;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 900;
     margin-bottom: 25px;
     color: #FFFFFF;
@@ -61,6 +62,7 @@ h3{
 }
 
 .heading-second{
+    margin-top: 20px;
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -71,8 +73,8 @@ h3{
 /* Header Section Styles Start */
 .header-section{
     max-width: 80%;
-    height: 715px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .navbar ul{
     max-width: 535px;
@@ -96,7 +98,6 @@ h3{
     transition: none;
 }
 .header-main{
-    margin: 0 auto;
     justify-content: space-between;
  
 }
@@ -110,10 +111,14 @@ h3{
 .nav-items:first-child:hover{
     padding: 0px;
     transition: none;
+}.menu-bar{
+  display: hide;
+
 }
-.menu{
-    box-sizing: border-box;
+.fa-solid{
+    border: #FFFFFF;
 }
+
 
 #highlight{
     font-family: "Dancing Script", cursive;
@@ -144,10 +149,8 @@ h3{
 }
 .header-img-content{
     flex-direction: column;
-    margin-right: 150px;
 }
 .header-img{
-    margin-right: 150px;
     display: block;
     position: absolute;
 }
@@ -530,9 +533,8 @@ hr{
 /* Responsive part */
 
 @media screen and (max-width: 575px){
-    body{
-        max-width: 100%vh;
-        height: 100%vh;
+    body, html{
+        overflow-x: hidden;
     }
     .header-section{
         max-width: 80%;
@@ -542,21 +544,29 @@ hr{
         display: none;
 
     }
+    .menu-bar{
+        height: 20px;
+        width: 30px;
+        box-sizing: border-box;  
+    }
 
     .header-main{
+        width: 400px;
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
     .btn-card-1 {
         bottom: -104px;
         right: -56px;
+        top: -30px;
     }
     .btn-card-2{
         right: 67px;
         top: 294px;
     }
     .header-main .heading-secondary{
-        font-size: 75px;
+        font-size: 70px;
         margin-bottom: 30px;
     }
     
@@ -565,7 +575,7 @@ hr{
 
     .habit-section{
         max-width: 80%;
-        margin-top: 410px;
+        margin-top: 430px;
         align-items: center;
     }
     .habit-container{
